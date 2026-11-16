@@ -10,6 +10,15 @@ The first launch asks you to select a language. Available languages are English,
 
 The game renders internally at **1024 × 768** and scales to the device display while preserving its original 4:3 aspect ratio.
 
+
+## Screenshots
+
+<p align="center">
+  <img src="cover.png" alt="0RBE - Game Cover" width="48%">
+  <img src="shot1.png" alt="0RBE - Gameplay Screenshot" width="48%">
+</p>
+
+
 ## Downloads & Installation
 
 0RBE is available in two different packages, depending on your preferred installation method and frontend.
