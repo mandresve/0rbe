@@ -137,7 +137,7 @@ Nothing else is needed.
 
 0RBE is being tested with the help of the PortMaster community.
 
-For test reports, bug reports, compatibility feedback, suggestions or general discussion, visit the official **[0RBE Testing Thread on Discord](https://discord.com/channels/1122861252088172575/1571976260857630941)**. Please include your device, firmware and the log file.
+For test reports, bug reports, compatibility feedback, suggestions or general discussion, visit the official **[0RBE Testing Thread on Discord](https://discord.com/channels/1122861252088172575/1572057302175977472)**. Please include your device, firmware and the log file.
 
 ## License & Distribution
 
