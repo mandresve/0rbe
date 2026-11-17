@@ -36,12 +36,12 @@ Alternatively, extract the ZIP into your firmware's `ports` folder, so that it c
 
 ### 2. Standalone PAK — `0rbe.pak.zip`
 
-**A tool pak for NextUI on the Trimui Brick and Brick Pro** (platform `tg5040`).
+**A tool pak for NextUI, MinUI and NX Redux on the Trimui Brick and Brick Pro** (platform `tg5040`).
 
 Installation:
 
 1. Download `0rbe.pak.zip` and extract it.
-2. Copy the whole `0rbe.pak` folder to `/Tools/tg5040/` on the SD card. It must look like this:
+2. Copy the whole `0rbe.pak` folder into the `Tools` folder at the root of the SD card (`/Tools/tg5040/`). It must look like this:
    ```
    /Tools/tg5040/0rbe.pak/launch.sh
    /Tools/tg5040/0rbe.pak/orbe
@@ -49,15 +49,12 @@ Installation:
    ```
 3. Launch 0RBE from **Tools**.
 
-MinUI and NX Redux use the same `Tools/tg5040` pak layout, so the pak should work there too, but it has only been tested on NextUI.
-
 ### Which package should I use?
 
 | Frontend / Environment | Package |
 |---|---|
 | PortMaster (any supported device) | `0rbe.zip` |
-| NextUI (Trimui Brick / Brick Pro) | `0rbe.pak.zip` |
-| MinUI, NX Redux (Trimui Brick / Brick Pro) | `0rbe.pak.zip` (untested) or `0rbe.zip` through PortMaster |
+| NextUI, MinUI, NX Redux (Trimui Brick / Brick Pro) | `0rbe.pak.zip` |
 
 ## Game Features
 
@@ -94,7 +91,7 @@ Everything can be played with the D-Pad alone. Under PortMaster, your device's u
 
 ## Compatibility
 
-0RBE was developed on the Trimui Brick Pro and is made for the Trimui Brick and Brick Pro.
+0RBE was developed on the Trimui Brick Pro and is made for the Trimui Brick and Brick Pro. The pak has been tested on NextUI, MinUI and NX Redux.
 
 The PortMaster package is device-agnostic: it reads controllers through PortMaster's mappings and adapts to the screen. It is being tested by the PortMaster community on other devices and firmwares; results depend on each device's architecture (AArch64 only) and its SDL2 version.
 
@@ -105,7 +102,7 @@ Progress and settings are saved automatically. A corrupted save is reset, and th
 | Package | Save file | Log file |
 |---|---|---|
 | PortMaster | `ports/0rbe/conf/save.txt` | `ports/0rbe/log.txt` |
-| NextUI pak | `Orbe/save.txt` in the frontend's shared user-data folder (the log's `save:` line shows the exact path) | `/Tools/tg5040/0rbe.pak/orbe-log.txt` |
+| Pak (NextUI, MinUI, NX Redux) | `Orbe/save.txt` in the frontend's shared user-data folder (the log's `save:` line shows the exact path) | `/Tools/tg5040/0rbe.pak/orbe-log.txt` |
 
 If something goes wrong, the log file is the most useful thing to share when reporting it.
 
@@ -118,6 +115,7 @@ If something goes wrong, the log file is the most useful thing to share when rep
 | Graphics | Procedurally generated |
 | Audio | Synthesized in real time |
 | Library | SDL2 (2.0.18 or newer) |
+| Frontends | PortMaster; NextUI, MinUI and NX Redux (pak) |
 | External assets | None |
 | Source code | Closed source |
 
